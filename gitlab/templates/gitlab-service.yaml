@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gitlab-test-service
+  namespace: gitlab-test
+spec:
+  selector:
+    app: gitlab-test
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80

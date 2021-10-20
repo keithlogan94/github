@@ -1,0 +1,9 @@
+---
+apiVersion: getambassador.io/v3alpha1
+kind:  Mapping
+metadata:
+  name:  webapp-mapping
+  namespace: gitlab-test
+spec:
+  prefix: /
+  service: gitlab-test-service.gitlab-test:8080
